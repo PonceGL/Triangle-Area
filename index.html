@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Triangle Area</title>
+</head>
+<body>
+    <header>
+        <h1>Triangle Area</h1>
+    </header>
+    <section class="container">
+        <div class="data_entry">
+            <h3 class="subtitle">Ingresa las medidas de el triangulo para calcular</h3>
+            <form action="" class="form_values" id="form_values">
+                <div>
+                    <input type="text" class="form_side" id="side_one" name="side_one">
+                    <label class="form_label" for="side_one">Lado uno</label>
+                </div>
+
+                <div>
+                    <input type="text" class="form_side" id="side_two" name="side_two">
+                    <label class="form_label" for="side_two">Lado dos</label>
+                </div>
+
+                <div>
+                    <input type="text" class="form_side" id="side_three" name="side_three">
+                    <label class="form_label" for="side_three">Lado tres</label>
+                </div>
+                <div>
+                    <input class="form_calc" id="form_calc" type="submit" value="Calcular">
+                </div>
+            </form>
+        </div>
+        <div class="result">
+            <section class="results_triangle_type">
+                <h3 id="results_triangle_type"></h3>
+            </section>
+            <div class="container_results" id="container_results">
+                <section class="container-results_data">
+                    <p class="data_area" id="data_area"></p>
+                    <p class="data_height" id="data_height"></p>
+                    <!-- <p>
+                        Las medidas proporcionadas de los lados son
+                    </p> -->
+                    <p class="side data_side_one" id="data_side_one"></p>
+                    <p class="side data_side_two" id="data_side_two"></p>
+                    <p class="side data_side_three" id="data_side_three"></p>
+                </section>
+            </div>
+            
+            <div class="polygon">
+                <svg height="300" width="300">
+                    <polygon class="escaleno hide" points="200,0 0,250 250,170" style="fill: #2d8cf0; stroke: #fff; stroke-width:2" stroke-linecap="round"/>
+                    <polygon class="isosceles hide" points="150,0 30,300 270,300" style="fill: #2d8cf0; stroke: #fff; stroke-width:2" stroke-linecap="round"/>
+                    <polygon class="equilatero hide" points="200,0 0,250 300,300" style="fill: #2d8cf0; stroke: #fff; stroke-width:2" stroke-linecap="round"/>
+
+                    <line class="strangeU hide" x1="50" y1="50" x2="250" y2="250" style="stroke:#2d8cf0; stroke-width:30" stroke-linecap="round"/>
+                    <line class="strangeD hide" x1="250" y1="50" x2="50" y2="250" style="stroke:#2d8cf0; stroke-width:30" stroke-linecap="round"/>
+
+                    <!-- <polygon points="200,10 250,190 160,210" style="fill: #2d8cf0; stroke: #fff; stroke-width:2" /> -->
+                  </svg>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
